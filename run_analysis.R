@@ -63,19 +63,20 @@ combined <- tbl_df(combined)
 
 #Tidy up dataset
 combined2 <- combined %>%
-        mutate(x_total_mean = rowSums(combined[grep("x_total", names(combined))])/128) %>%
-        mutate(y_total_mean = rowSums(combined[grep("y_total", names(combined))])/128) %>%
-        mutate(z_total_mean = rowSums(combined[grep("z_total", names(combined))])/128) %>%
-        mutate(x_body_mean = rowSums(combined[grep("x_body", names(combined))])/128) %>%
-        mutate(y_body_mean = rowSums(combined[grep("y_body", names(combined))])/128) %>%
-        mutate(z_body_mean = rowSums(combined[grep("z_body", names(combined))]/128)) %>%
-        mutate(x_gyro_mean = rowSums(combined[grep("x_gyro", names(combined))])/128) %>%
-        mutate(y_gyro_mean = rowSums(combined[grep("y_gyro", names(combined))])/128) %>%
-        mutate(z_gyro_mean = rowSums(combined[grep("z_gyro", names(combined))])/128) %>%
+        mutate(x_total_mean = rowMeans(combined[grep("x_total", names(combined))])) %>%
+        mutate(y_total_mean = rowMeans(combined[grep("y_total", names(combined))])) %>%
+        mutate(z_total_mean = rowMeans(combined[grep("z_total", names(combined))])) %>%
+        mutate(x_body_mean = rowMeans(combined[grep("x_body", names(combined))])) %>%
+        mutate(y_body_mean = rowMeans(combined[grep("y_body", names(combined))])) %>%
+        mutate(z_body_mean = rowMeans(combined[grep("z_body", names(combined))])) %>%
+        mutate(x_gyro_mean = rowMeans(combined[grep("x_gyro", names(combined))])) %>%
+        mutate(y_gyro_mean = rowMeans(combined[grep("y_gyro", names(combined))])) %>%
+        mutate(z_gyro_mean = rowMeans(combined[grep("z_gyro", names(combined))])) %>%
         select(-grep("Reading|std", names(combined))) %>%
         #Take averages of each variable across rows, by group
         group_by(activity, subject) %>%
         summarize_all(mean)
-
+#Output resulting dataset
+write.table(combined2, "tidyDataset.txt", row.name=FALSE)
 
 
