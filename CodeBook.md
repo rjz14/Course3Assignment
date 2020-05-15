@@ -5,50 +5,50 @@ The variables contained in the final dataset are listed below:
 - subject  - The volunteer (of 30) associated with the measurements.
 
 The variables below are described in the "Feature Selection" section of this code book.
-tBodyAcc-mean()-X 
-tBodyAcc-mean()-Y 
-tBodyAcc-mean()-Z 
-tGravityAcc-mean()-X 
-tGravityAcc-mean()-Y 
-tGravityAcc-mean()-Z 
-tBodyAccJerk-mean()-X 
-tBodyAccJerk-mean()-Y 
-tBodyAccJerk-mean()-Z 
-tBodyGyro-mean()-X 
-tBodyGyro-mean()-Y 
-tBodyGyro-mean()-Z 
-tBodyGyroJerk-mean()-X 
-tBodyGyroJerk-mean()-Y 
-tBodyGyroJerk-mean()-Z 
-tBodyAccMag-mean() 
-tGravityAccMag-mean() 
-tBodyAccJerkMag-mean() 
-tBodyGyroMag-mean() 
-tBodyGyroJerkMag-mean() 
-fBodyAcc-mean()-X 
-fBodyAcc-mean()-Y 
-fBodyAcc-mean()-Z 
-fBodyAccJerk-mean()-X 
-fBodyAccJerk-mean()-Y 
-fBodyAccJerk-mean()-Z 
-fBodyGyro-mean()-X 
-fBodyGyro-mean()-Y 
-fBodyGyro-mean()-Z 
-fBodyAccMag-mean() 
-fBodyBodyAccJerkMag-mean() 
-fBodyBodyGyroMag-mean() 
-fBodyBodyGyroJerkMag-mean() 
+- tBodyAcc-mean()-X 
+- tBodyAcc-mean()-Y 
+- tBodyAcc-mean()-Z 
+- tGravityAcc-mean()-X 
+- tGravityAcc-mean()-Y 
+- tGravityAcc-mean()-Z 
+- tBodyAccJerk-mean()-X 
+- tBodyAccJerk-mean()-Y 
+- tBodyAccJerk-mean()-Z 
+- tBodyGyro-mean()-X 
+- tBodyGyro-mean()-Y 
+- tBodyGyro-mean()-Z 
+- tBodyGyroJerk-mean()-X 
+- tBodyGyroJerk-mean()-Y 
+- tBodyGyroJerk-mean()-Z 
+- tBodyAccMag-mean() 
+- tGravityAccMag-mean() 
+- tBodyAccJerkMag-mean() 
+- tBodyGyroMag-mean() 
+- tBodyGyroJerkMag-mean() 
+- fBodyAcc-mean()-X 
+- fBodyAcc-mean()-Y 
+- fBodyAcc-mean()-Z 
+- fBodyAccJerk-mean()-X 
+- fBodyAccJerk-mean()-Y 
+- fBodyAccJerk-mean()-Z 
+- fBodyGyro-mean()-X 
+- fBodyGyro-mean()-Y 
+- fBodyGyro-mean()-Z 
+- fBodyAccMag-mean() 
+- fBodyBodyAccJerkMag-mean() 
+- fBodyBodyGyroMag-mean() 
+- fBodyBodyGyroJerkMag-mean() 
 
 The variables below are the mean of each of the acceleration and angular velocity variables in the X, Y, and Z directions.  These summarize the 128 readings for each of these measurements.
-x_total_mean 
-y_total_mean 
-z_total_mean 
-x_body_mean 
-y_body_mean 
-z_body_mean 
-x_gyro_mean 
-y_gyro_mean 
-z_gyro_mean
+- x_total_mean 
+- y_total_mean 
+- z_total_mean 
+- x_body_mean 
+- y_body_mean 
+- z_body_mean 
+- x_gyro_mean 
+- y_gyro_mean 
+- z_gyro_mean
 
 The summaries calculated for this dataset are as follows:
 ======================================
