@@ -1,7 +1,8 @@
 The variables contained in the final dataset are listed below:
+======================================
 
-activity - The activity being performed when the measurements were taken.
-subject  - The volunteer (of 30) associated with the measurements.
+- activity - The activity being performed when the measurements were taken.
+- subject  - The volunteer (of 30) associated with the measurements.
 
 The variables below are described in the "Feature Selection" section of this code book.
 tBodyAcc-mean()-X 
@@ -49,7 +50,9 @@ x_gyro_mean
 y_gyro_mean 
 z_gyro_mean
 
-The summaries calculated for this dataset are the mean of each variable, grouped by activity and subject.
+The summaries calculated for this dataset are as follows:
+======================================
+- the mean of each variable, grouped by activity and subject.
 
 
 
